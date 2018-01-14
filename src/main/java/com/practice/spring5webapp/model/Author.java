@@ -1,7 +1,9 @@
 package com.practice.spring5webapp.model;
 
 import java.util.HashSet;
+import java.util.Objects;
 import java.util.Set;
+import java.util.StringJoiner;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -103,5 +105,31 @@ public class Author {
      */
     public void setBooks(Set<Book> books) {
         this.books = books;
+    }
+
+
+    @Override
+    public int hashCode() {return Objects.hash(this.id);}
+
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (obj == null || this.getClass() != obj.getClass()) {
+            return false;
+        }
+        final Author other = (Author) obj;
+        return Objects.equals(this.id, other.id);
+    }
+
+    @Override
+    public String toString() {
+        return new StringJoiner(", ", this.getClass().getSimpleName() + "[", "]")
+                .add("books = " + books)
+                .add("firstName = " + firstName)
+                .add("id = " + id)
+                .add("lastName = " + lastName)
+                .toString();
     }
 }
