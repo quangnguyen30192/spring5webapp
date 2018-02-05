@@ -1,4 +1,4 @@
-package com.practice.spring5webapp;
+package com.practice.spring5webapp.config;
 
 import com.practice.spring5webapp.model.Author;
 import com.practice.spring5webapp.model.Book;
@@ -12,7 +12,7 @@ import org.springframework.context.event.ContextRefreshedEvent;
 import org.springframework.stereotype.Component;
 
 @Component
-public class DatabasePopulator implements ApplicationListener<ContextRefreshedEvent> {
+public class BootstrapApp implements ApplicationListener<ContextRefreshedEvent> {
 
     @Autowired
     private AuthorRepository authorRepository;
