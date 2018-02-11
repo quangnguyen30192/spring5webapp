@@ -8,11 +8,9 @@ import javax.persistence.Lob;
 import javax.persistence.OneToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 public class Notes {
 

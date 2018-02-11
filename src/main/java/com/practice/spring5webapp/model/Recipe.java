@@ -14,11 +14,9 @@ import javax.persistence.OneToMany;
 import javax.persistence.OneToOne;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import lombok.RequiredArgsConstructor;
 
 @Data
 @NoArgsConstructor
-@RequiredArgsConstructor
 @Entity
 public class Recipe {
 
