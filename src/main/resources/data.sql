@@ -1,0 +1,10 @@
+INSERT INTO category (description) VALUES ('Sarkidornis melanotos');
+INSERT INTO category (description) VALUES ('Cracticus nigroagularis');
+INSERT INTO category (description) VALUES ('Panthera onca');
+INSERT INTO category (description) VALUES ('Butorides striatus');
+INSERT INTO category (description) VALUES ('Uraeginthus granatina');
+INSERT INTO category (description) VALUES ('Globicephala melas');
+INSERT INTO category (description) VALUES ('Canis lupus baileyi');
+INSERT INTO category (description) VALUES ('Propithecus verreauxi');
+INSERT INTO category (description) VALUES ('Lycaon pictus');
+INSERT INTO category (description) VALUES ('Bubalus arnee');

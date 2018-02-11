@@ -21,7 +21,7 @@ public class Category {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String departmentName;
+    private String description;
 
     @ManyToMany
     @JoinTable(name = "category_recipe",
